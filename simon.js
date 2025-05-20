@@ -79,7 +79,13 @@ function nextSequence() {
   $("#" + randomChosenColour)
     .fadeIn(100)
     .fadeOut(100)
-    .fadeIn(100);
+    .fadeIn(100)
+    .addClass("pressed");
+
+  setTimeout(function () {
+    $("#" + randomChosenColour).removeClass("pressed");
+  }, 100);
+
   playSound(randomChosenColour);
 }
 
