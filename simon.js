@@ -36,6 +36,7 @@ $(document).ready(function () {
     nextSequence();
     started = true;
   }
+});
 
 $(document).keypress(function () {
   if (!started) {
